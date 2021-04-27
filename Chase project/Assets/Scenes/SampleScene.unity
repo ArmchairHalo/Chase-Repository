@@ -1313,6 +1313,7 @@ GameObject:
   - component: {fileID: 1550696217}
   - component: {fileID: 1550696221}
   - component: {fileID: 1550696222}
+  - component: {fileID: 1550696223}
   m_Layer: 0
   m_Name: The Rat_0
   m_TagString: Untagged
@@ -1413,7 +1414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550696216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.54, y: -1.3, z: 0}
+  m_LocalPosition: {x: 1.6, y: 2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1432,8 +1433,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32855296, y: -0.12843847}
-  m_Size: {x: 2.0839787, y: 2.0839787}
+  m_Offset: {x: -0.036875904, y: 0.5293337}
+  m_Size: {x: 1.6941873, y: 2.6930287}
   m_Direction: 0
 --- !u!114 &1550696222
 MonoBehaviour:
@@ -1447,6 +1448,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3efcf92a3880044eb702bddd617bab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1550696223
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550696216}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2dd6c202e77284741a8b229530c702b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1803012978
 GameObject:
   m_ObjectHideFlags: 0
