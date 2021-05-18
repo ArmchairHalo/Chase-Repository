@@ -19,15 +19,25 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get our rigidbody that we will need to find the physics information
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        //find out from the rigidbody what our current horizontal and vertical speeds are 
+        float currentSpeedH = ourRigidbody.velocity.x;
+        float currentSpeedV = ourRigidbody.velocity.y;
+
+        //Get the animator component that we will be using for setting our animation
+        Animator ourAnimator = GetComponent<Animator>();
+
+        // Tell our animator what the speeds are 
+        ourAnimator.SetFloat("speedH", currentSpeedH);
+        ourAnimator.SetFloat("speedV", currentSpeedV);
 
         // Condition when the player presses D...
         if (Input.GetKey(KeyCode.D) == true)
         {
             // Action: Apply a force (move the player)
 
-            // Get the rigidbody component off our player so 
-            // we can use it 
-            Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
 
             // Add a force to the rigid body to move our player
             ourRigidbody.AddForce(Vector2.right * movementForce);
@@ -38,9 +48,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // Action: Apply a force (move the player)
 
-            // Get the rigidbody component off our player so 
-            // we can use it 
-            Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+           
 
             // Add a force to the rigid body to move our player
             ourRigidbody.AddForce(Vector2.left * movementForce);
@@ -51,9 +59,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // Action: Apply a force (move the player)
 
-            // Get the rigidbody component off our player so 
-            // we can use it 
-            Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+           
 
             // Add a force to the rigid body to move our player
             ourRigidbody.AddForce(Vector2.up * movementForce);
@@ -64,9 +70,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // Action: Apply a force (move the player)
 
-            // Get the rigidbody component off our player so 
-            // we can use it 
-            Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
 
             // Add a force to the rigid body to move our player
             ourRigidbody.AddForce(Vector2.down * movementForce);
