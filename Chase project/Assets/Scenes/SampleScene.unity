@@ -174,7 +174,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.370693
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 657469697}
   - component: {fileID: 657469696}
   - component: {fileID: 657469693}
+  - component: {fileID: 657469698}
   m_Layer: 0
   m_Name: Cat(Black)_0
   m_TagString: Untagged
@@ -295,7 +296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657469692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.06, y: 0.98, z: 0}
+  m_LocalPosition: {x: 6.44, y: 6.97, z: 0}
   m_LocalScale: {x: 1.6089823, y: 1.5413178, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -314,7 +315,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
+  m_LinearDrag: 15
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -348,6 +349,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2013614, y: 1.4655788}
   m_EdgeRadius: 0
+--- !u!114 &657469698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657469692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f9121502e3ebf4bbfdca8333829f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceStrength: 10
+  target: {fileID: 1550696220}
 --- !u!1 &1247947894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550696216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: 2.89, z: 0}
+  m_LocalPosition: {x: -2.28, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
